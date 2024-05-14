@@ -49,4 +49,7 @@ Once that is done, open `EmuAuth.exe` and enter the application secret. All traf
 Most likely won't work since the certificates I have generated have expiration date and you need to modify the server for the speficic program (unless it uses default names for everything). [They are in release section though](https://github.com/SamuelTulach/EmuAuth/releases).
 
 ## It doesn't work??
-This is a bit overengineered solution. You can just memory replace the app crendentials with your own in memory. You can use the DLL as a base -> VirtualQuery find all valid memory RW regions -> find and replace app secret and owner ID. I won't be providing help
+This is a bit overengineered solution. You can just memory replace the app crendentials with your own in memory. You can use the DLL as a base -> VirtualQuery find all valid memory RW regions -> find and replace app secret and owner ID. I won't be providing help with any specific programs.
+
+## How to prevent this from happening to my own software?
+Use a custom proxy in between KeyAuth APIs and your clients. Never put the app secret in the actual program.
