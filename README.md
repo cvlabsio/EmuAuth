@@ -36,3 +36,9 @@ Before you can use the emulator, you need to do two things:
 Once that is done, open `EmuAuth.exe` and enter the application secret. All traffic to KeyAuth servers should now be redirected to it. You might need to recompile it and edit/add some other responses depending on the target program.
 
 [![video](https://img.youtube.com/vi/VFNzedvtjJs/0.jpg)](https://www.youtube.com/watch?v=VFNzedvtjJs)
+
+## Compiling
+1. Download and install [OpenSSL binary builds for Windows](https://kb.firedaemon.com/support/solutions/articles/4000121705#Download-OpenSSL).
+2. Make sure you have VS2022 with C++ build tools and MFC installed
+3. Open `EmuAuth.sln` and compile the project (you may need to adjust include and library directories if you have choisen non-default install location for OpenSSL)
+4. Generate required certificates using the script in `Certificates/` and place them in `certs/` folder next to the `EmuAuth.exe`
