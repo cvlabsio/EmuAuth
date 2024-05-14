@@ -35,6 +35,11 @@ Before you can use the emulator, you need to do two things:
 ```
 3. Save the file
 
+**Run CRL server**
+- The certificates distributed with compiled binaries use following CRL URL: http://127.0.0.1:4204/crl/ca.crl
+- You should be able to run this server just once, when Windows verifies the certificate, it should stay cached
+1. Run simple HTTP server hosting `rootCA.crl` at /crl/ca.crl (you can use Python HTTP server `python3 -m http.server 4204`)
+
 Once that is done, open `EmuAuth.exe` and enter the application secret. All traffic to KeyAuth servers should now be redirected to it. You might need to recompile it and edit/add some other responses depending on the target program.
 
 [![video](https://img.youtube.com/vi/VFNzedvtjJs/0.jpg)](https://www.youtube.com/watch?v=VFNzedvtjJs)
