@@ -34,3 +34,5 @@ Before you can use the emulator, you need to do two things:
 3. Save the file
 
 Once that is done, open `EmuAuth.exe` and enter the application secret. All traffic to KeyAuth servers should now be redirected to it. You might need to recompile it and edit/add some other responses depending on the target program.
+
+[![video](https://img.youtube.com/vi/VFNzedvtjJs/0.jpg)](https://www.youtube.com/watch?v=VFNzedvtjJs)
