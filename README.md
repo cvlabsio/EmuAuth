@@ -42,3 +42,6 @@ Once that is done, open `EmuAuth.exe` and enter the application secret. All traf
 2. Make sure you have VS2022 with C++ build tools and MFC installed
 3. Open `EmuAuth.sln` and compile the project (you may need to adjust include and library directories if you have choisen non-default install location for OpenSSL)
 4. Generate required certificates using the script in `Certificates/` and place them in `certs/` folder next to the `EmuAuth.exe`
+
+## Precompiled builds
+Most likely won't work since the certificates I have generated have expiration date and you need to modify the server for the speficic program (unless it uses default names for everything). [They are in release section though](https://github.com/SamuelTulach/EmuAuth/releases).
