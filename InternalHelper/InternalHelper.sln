@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InternalHelper", "InternalHelper\InternalHelper.vcxproj", "{0EBA974D-AF26-48E7-A7EA-CBF1825E36D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EBA974D-AF26-48E7-A7EA-CBF1825E36D0}.Release|x64.ActiveCfg = Release|x64
+		{0EBA974D-AF26-48E7-A7EA-CBF1825E36D0}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F74D996E-F0B9-4034-A46A-ED970D5698BF}
+	EndGlobalSection
+EndGlobal
