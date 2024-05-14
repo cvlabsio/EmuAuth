@@ -1,6 +1,8 @@
 # EmuAuth
 This project is a simple reimplementation of the [KeyAuth](https://keyauth.cc/) protocol for purposes of its emulation. 
 
+For educational purposes only. Use responsibly on your own programs to test them against these trivial methods.
+
 ![screenshot](Assets/screenshot.png)
 
 ## Usage
@@ -45,3 +47,6 @@ Once that is done, open `EmuAuth.exe` and enter the application secret. All traf
 
 ## Precompiled builds
 Most likely won't work since the certificates I have generated have expiration date and you need to modify the server for the speficic program (unless it uses default names for everything). [They are in release section though](https://github.com/SamuelTulach/EmuAuth/releases).
+
+## It doesn't work??
+This is a bit overengineered solution. You can just memory replace the app crendentials with your own in memory. You can use the DLL as a base -> VirtualQuery find all valid memory RW regions -> find and replace app secret and owner ID. I won't be providing help
